@@ -1,0 +1,87 @@
+._1Ixzy {
+  margin-left: 2px !important;
+}
+._2C9-R {
+  text-align: left !important;
+}
+._2-mAj {
+  outline: none !important;
+}
+
+._nYEjV {
+  text-align: left !important;
+}
+
+._10MlI {
+    content: url("../../Images/whatsapp_profile.png")!important;
+    padding: 0!important;
+}
+
+._1bpcM svg {
+  width: 30px;
+}
+
+.chat_widget .parent,
+.chat_widget .child_phone {
+  align-self: flex-end;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: rgb(0 0 0 / 15%) 0px 3px 12px;
+  color: rgb(79, 206, 93);
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  font-size: 2em;
+  height: 64px;
+  width: 64px;
+  justify-content: center;
+  align-items: center;
+  outline: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  position: fixed;
+  left: 30px;
+}
+
+._1bpcM {
+  bottom: 170px !important;
+  left: 30px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  z-index: 999 !important;
+  position: fixed !important;
+  transition: all 0.5s;
+}
+
+.chat_widget .child_phone {
+  bottom: 94px;
+  transition: all 0.5s;
+}
+.chat_widget .child_phone a img {
+  height: 30px;
+  width: 30px;
+  display: flex;
+}
+._2iWL7 {
+  z-index: 999 !important;
+  position: fixed !important;
+}
+
+.chat_widget .parent {
+  bottom: 15px;
+  transition: all 0.5s;
+}
+
+.chat_widget .parent img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.8s ease;
+}
+
+.dark-mode .parent,
+.dark-mode ._1bpcM,
+.dark-mode .child_phone {
+  background-color: #3a3a3a;
+}

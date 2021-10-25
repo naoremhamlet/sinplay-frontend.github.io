@@ -1,0 +1,475 @@
+* {
+  font-family: "Nunito", sans-serif;
+  transition: all 0.75s;
+}
+:root {
+  --primary: #012970;
+  --secondary: #5061ff;
+  --white: white;
+  --font2: #444444;
+  --dark-black: #282828;
+  --dark-secondary: #4664e6;
+  /* --dark-primary: ; */
+}
+.contact_container {
+  max-width: 1150px;
+  width: 1150px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.contact_detail_container {
+  margin: 120px 30px 0;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+}
+
+.contact_info_container {
+  display: flex;
+}
+
+.contact {
+  height: fit-content;
+  font-size: "small";
+  font-weight: 600;
+  width: 60%;
+  margin: 0;
+}
+
+.contact .contact_details .contact_info {
+  display: flex;
+}
+
+.contact .contact_details .contact_info p {
+  width: 47%;
+  padding: 0% 1%;
+  margin: 0px;
+}
+
+.contact_us_header {
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+  opacity: 0.8;
+  color: var(--primary);
+  text-align: center;
+}
+.contact .contact_us_header {
+  margin-right: 80px;
+}
+
+.contact .contact_details .about {
+  width: 92%;
+  /* padding: 0% 2%; */
+  margin: 0 auto 0 0;
+}
+
+.contact .contact_details p label,
+.contact .contact_about label {
+  color: black;
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  font-weight: bolder;
+  display: none;
+  transition: all 0.75s;
+}
+
+/* .contact .contact_details .contact_info p input { */
+.contact .contact_details .contact_info p input,
+.meeting_info input {
+  width: 96%;
+  font-size: 18px;
+  margin: 0 0 10% 0;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-bottom: solid 2px #c8c8c8;
+  background-color: white;
+  color: var(--font2);
+  margin: 40px 0;
+  transition: all 0.3;
+}
+.contact .contact_details .contact_info p input:focus {
+  border-color: #879dff;
+}
+.contact .contact_details .contact_info p input[id="name"],
+.contact .contact_details .contact_info p input[id="company"] {
+  margin: 0 0 40px 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+/* .contact .contact_details p textarea { */
+textarea {
+  width: 100%;
+  height: 100px;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: solid 2px #c8c8c8;
+  font-size: 18px;
+
+  /* font-size: small; */
+  background-color: white;
+  font-size: 18px;
+  color: var(--font2);
+  margin-top: 30px;
+}
+.contact .contact_details p textarea:focus {
+  border-color: #879dff;
+}
+.contact .contact_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .contact_button .submit_button {
+  background-color: var(--secondary);
+  padding: 22px 45px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--white);
+  font-size: 18px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+  line-height: 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-top: 30px;
+}
+.contact .contact_button .submit_button:hover {
+  box-shadow: 0px 5px 10px rgb(65 84 241 / 40%);
+  transform: scale(1.03);
+}
+.contact .contact_button .submit_button:active {
+  transform: scale(0.9);
+}
+#__react-alert__ {
+  font-size: 12px !important;
+}
+
+.contact_container map {
+  width: 40%;
+  max-width: 400px;
+}
+
+.contact_info_container {
+  /* display: flex; */
+  display: none;
+}
+
+.contact_info_container .contact_info_content {
+  /* padding: 1.5rem; */
+  width: 25%;
+  height: 20 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact_info_container .contact_info_content .content_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_info_container .contact_info_content .content_image img {
+  height: 60px;
+  width: 60px;
+}
+.contact_info_container .contact_info_content .content_details {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+/* ------------------------------------------- */
+* {
+  font-family: "Nunito", sans-serif;
+}
+:root {
+  --primary: #012970;
+  --secondary: #5061ff;
+  --white: white;
+  --font2: #444444;
+  --dark-black: #282828;
+  --dark-secondary: #4664e6;
+  /* --dark-primary: ; */
+}
+.meeting_container {
+  /* padding: 2%; */
+  width: 320px;
+  /* box-shadow: 0px 2px 20px #b9babb; */
+  height: min-content;
+  text-align: center;
+}
+.meeting_container .meeting_header .meeting_heading {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.meeting_container .meeting_header .meeting_description {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.meeting_container .meeting_details {
+  /* height: 380px; */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.meeting_container .meeting_details .meeting_info input,
+.meeting_container .meeting_details .meeting_guest .guest_email_input {
+  margin: 20px 0;
+  font-size: 16px;
+}
+.meeting_container .meeting_details .meeting_info textarea {
+  margin: 10px 0;
+  width: 96%;
+  font-size: 16px;
+}
+
+/* .meeting_container .meeting_details .meeting_info input,
+.meeting_container .meeting_details .meeting_guest .guest_email_input {
+  width: 90%;
+  height: 20px;
+  margin: 5px 0;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: white;
+  font-weight: 500;
+  color: black;
+  font-size: 13px;
+  border-bottom: solid 1px #a3a2a2;
+} */
+/* .meeting_guest {
+  display: none;
+} */
+
+/* .meeting_container .meeting_details .meeting_info textarea {
+  width: 90%;
+  height: 80px;
+  margin: 5px 0;
+  padding: 5px;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: white;
+  font-weight: 500;
+  color: black;
+  font-size: 13px;
+  border-bottom: solid 1px #a3a2a2;
+} */
+.meeting_container .meeting_submit {
+  border: none;
+  outline: none;
+  background-color: var(--secondary);
+  padding: 20px 45px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--white);
+  font-size: 18px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+  line-height: 0;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.meeting_container .meeting_submit:hover {
+  box-shadow: 0px 5px 10px rgb(65 84 241 / 40%);
+  transform: scale(1.03);
+}
+.meeting_container .meeting_submit:active {
+  transform: scale(0.9);
+}
+/* .meeting_container .meeting_details p .add_guest_button {
+  width: 20px;
+  background-color: #457ccf !important;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  align-content: center;
+  text-align: center;
+  font-weight: 800;
+} */
+
+.rdtPicker {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  border: none !important;
+}
+.rdtSwitch {
+  /* border-bottom: 2px solid #c8c8c8 !important; */
+  border-bottom: 2px solid #d1d1d1 !important;
+}
+.rdt {
+  background-color: #f2f2f2 !important;
+}
+
+.rdtDisabled {
+  font-weight: 300 !important;
+}
+
+.rdtBtn {
+  color: var(--secondary);
+}
+.rdtCount {
+  font-weight: 600 !important;
+}
+
+.dow {
+  color: #457ccf !important;
+
+  font-weight: bold;
+}
+.dow:nth-child(1) {
+  color: red !important;
+}
+.dow:nth-child(7) {
+  color: red !important;
+}
+.schedule-header {
+  /* font-size: 35px; */
+  /* margin-top: 8px; */
+  margin-bottom: 38px;
+  white-space: nowrap;
+}
+.contact-info-child {
+  display: flex;
+}
+.contact-info-child h1 {
+  font-size: 30px;
+}
+.location-icon {
+  margin-left: 6px;
+}
+.contact-info {
+  margin: 60px 0 0 20px;
+  margin: 80px auto;
+}
+.contact-info div {
+  margin: 30px 0;
+}
+.contact-info p {
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+  font-size: 17px;
+  cursor: pointer;
+}
+.meeting_guest p {
+  font-size: 16px;
+  font-weight: 800;
+  opacity: 0.9;
+  text-align: left;
+  width: 96%;
+  margin: 10px auto 20px !important;
+}
+.meeting_guest input {
+  border: none;
+  width: 96%;
+  border-bottom: solid 2px #c8c8c8;
+  padding: 5px 0;
+}
+.meeting_guest input:focus {
+  outline: none;
+}
+.add_guest_button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  margin-right: 10px;
+  user-select: none;
+}
+
+
+/* ------------------ dark-mode --------------- */
+
+.dark-mode .contact_detail_container {
+  background-color: #242526;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 0px;
+}
+.dark-mode .contact-info-child h1,
+.dark-mode .contact-info p {
+  color: white;
+}
+.dark-mode .contact .contact_details .contact_info p input,
+.dark-mode .meeting_info input,
+.dark-mode .meeting_guest input,
+.dark-mode textarea {
+  background-color: #242526 !important;
+  color: white;
+  opacity: 1;
+}
+.dark-mode .contact .contact_details .contact_info p input::placeholder,
+.dark-mode .meeting_info input::placeholder,
+.dark-mode .meeting_guest input::placeholder,
+.dark-mode textarea::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+.dark-mode .contact .contact_details .contact_info p input:focus,
+.dark-mode .meeting_info input:focus,
+.dark-mode .meeting_guest input:focus,
+.dark-mode textarea:focus {
+  background-color: #242526;
+  color: white;
+  /* opacity:1; */
+}
+.dark-mode .contact_us_header {
+  color: var(--dark-secondary);
+}
+.dark-mode .rdtPicker {
+  background-color: #242526;
+}
+.dark-mode .meeting_description,
+.dark-mode .rdtSwitch {
+  color: white;
+  opacity: 0.8;
+}
+.dark-mode .rdtCount,
+.dark-mode .rdtDay,
+.dark-mode .rdtNext,
+.dark-mode .rdtPrev {
+  color: white;
+}
+
+.meeting_guest label {
+  cursor: pointer;
+  user-select: none;
+}
+.dark-mode .meeting_guest p,
+.add_guest_button {
+  color: white;
+}
+.dark-mode .dow:nth-child(1) {
+  color: rgb(246, 105, 105) !important;
+}
+.dark-mode .dow:nth-child(7) {
+  color: rgb(246, 105, 105) !important;
+}
